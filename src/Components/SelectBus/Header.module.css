@@ -1,0 +1,59 @@
+.Header {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.HeaderOne {
+  background: linear-gradient(90deg, #f2fbf8 0%, #fff7ea 100%);
+  border: 1px solid #d6e9df;
+  border-radius: 14px;
+  padding: 11px 14px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.HeaderOne > p:nth-child(1) {
+  margin: 0;
+  color: #58707f;
+  font-size: 12px;
+}
+
+.HeaderOne > p:nth-child(2) {
+  margin: 0;
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.HeaderTwo {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  box-shadow: var(--shadow);
+}
+
+.HeaderTwo h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.dateChip {
+  font-size: 13px;
+  color: #0f766e;
+  font-weight: 800;
+  background: #e6f7f4;
+  border-radius: 999px;
+  padding: 6px 10px;
+}

@@ -1,0 +1,105 @@
+.Navbar {
+  width: min(1320px, 95%);
+  margin: 14px auto;
+  padding: 12px 18px;
+  border-radius: 18px;
+  background: linear-gradient(115deg, #0f766e 0%, #0e7490 58%, #115e59 100%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 18px 28px rgba(11, 59, 54, 0.28);
+}
+
+.Navbar li {
+  cursor: pointer;
+}
+
+.Navbar a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #effcf8;
+}
+
+.Navbar__listOne,
+.Navbar__listTwo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar__listOne > li,
+.Navbar__listTwo > li {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 8px;
+  color: #e6fff9;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.15px;
+}
+
+.Navbar__listOne > li:hover,
+.Navbar__listTwo > li:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.icons {
+  font-size: 23px;
+  color: #f0fdfa;
+}
+
+.accountIcon {
+  font-size: 30px !important;
+  color: #f0fdfa;
+}
+
+.navAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rightSide_header,
+.leftSide_header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #f0fdfa;
+}
+
+.leftSide_header img {
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.iconButton {
+  color: #f0fdfa !important;
+  padding: 4px !important;
+}
+
+@media (max-width: 900px) {
+  .Navbar {
+    width: 98%;
+    padding: 10px;
+  }
+
+  .Navbar__listOne > li,
+  .Navbar__listTwo > li {
+    margin: 0 4px;
+    font-size: 11px;
+  }
+
+  .icons {
+    font-size: 20px;
+  }
+
+  .accountIcon {
+    font-size: 24px !important;
+  }
+
+  .navAction span {
+    display: none;
+  }
+}

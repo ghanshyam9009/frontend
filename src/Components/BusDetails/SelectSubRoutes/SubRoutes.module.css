@@ -1,0 +1,104 @@
+.mainContainer {
+  width: 100%;
+  max-width: 960px;
+  min-height: 380px;
+  padding: 12px;
+  background-color: #f8f8f8;
+  margin: 16px 0;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.columnCard {
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.columnCard h4 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #d84e55;
+  letter-spacing: 0.2px;
+}
+
+.pointList {
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.pointRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 58px;
+  padding: 8px 10px;
+  align-items: center;
+  border-bottom: 1px solid #f3f3f5;
+  cursor: pointer;
+}
+
+.pointRow:last-child {
+  border-bottom: none;
+}
+
+.pointLeft {
+  min-width: 92px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pointTime {
+  font-size: 14px;
+  color: #2f2f35;
+  font-weight: 700;
+}
+
+.pointRight {
+  flex: 1;
+  padding-left: 8px;
+}
+
+.pointName {
+  font-size: 14px;
+  color: #3e3e52;
+  font-weight: 600;
+}
+
+.continueButton {
+  width: 100%;
+  height: 42px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+  text-align: center;
+  background-color: #d84e55;
+  color: #fff;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+.continueButton:hover {
+  background-color: #c7444c;
+}
+
+@media (max-width: 900px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .pointList {
+    max-height: 220px;
+  }
+}

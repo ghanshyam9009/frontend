@@ -1,0 +1,134 @@
+.auth-page {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 16px;
+  background:
+    radial-gradient(circle at 5% 8%, rgba(222, 11, 36, 0.14), transparent 36%),
+    radial-gradient(circle at 95% 92%, rgba(255, 106, 61, 0.18), transparent 35%),
+    linear-gradient(180deg, #fff5f5 0%, #f8fafc 100%);
+}
+
+.auth-page-card {
+  width: 100%;
+  max-width: 460px;
+  background: #fff;
+  border: 1px solid #f0d9da;
+  border-radius: 20px;
+  box-shadow: 0 25px 55px rgba(15, 23, 42, 0.15);
+  padding: 24px;
+}
+
+.auth-page-head h1 {
+  margin: 0;
+  font-size: 1.65rem;
+  color: #1f2937;
+}
+
+.auth-page-head p {
+  margin: 8px 0 0;
+  color: #66768c;
+  line-height: 1.45;
+}
+
+.auth-page-tabs {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  background: #f3f6fa;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.auth-page-tab {
+  border: 0;
+  border-radius: 9px;
+  min-height: 42px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #4d5b6f;
+  background: transparent;
+  cursor: pointer;
+}
+
+.auth-page-tab.active {
+  background: linear-gradient(135deg, #de0b24, #ff6a3d);
+  color: #fff;
+  box-shadow: 0 8px 14px rgba(222, 11, 36, 0.25);
+}
+
+.auth-page-form {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.auth-page-form label {
+  font-weight: 600;
+  color: #3f4b5f;
+}
+
+.auth-page-form input {
+  border: 1px solid #d8e0eb;
+  border-radius: 10px;
+  height: 44px;
+  padding: 0 12px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.auth-page-form input:focus {
+  border-color: #de0b24;
+  box-shadow: 0 0 0 3px rgba(222, 11, 36, 0.1);
+}
+
+.auth-page-submit {
+  margin-top: 10px;
+  border: 0;
+  border-radius: 10px;
+  min-height: 44px;
+  background: linear-gradient(135deg, #de0b24, #ff6a3d);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.auth-page-submit:disabled {
+  opacity: 0.75;
+  cursor: default;
+}
+
+.auth-page-error {
+  margin: 12px 0 0;
+  color: #d50000;
+  font-weight: 600;
+}
+
+.auth-page-footer {
+  margin-top: 14px;
+}
+
+.auth-page-footer a {
+  color: #de0b24;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .auth-page {
+    min-height: calc(100vh - 72px);
+    padding: 14px;
+  }
+
+  .auth-page-card {
+    border-radius: 14px;
+    padding: 16px;
+  }
+
+  .auth-page-head h1 {
+    font-size: 1.28rem;
+  }
+}

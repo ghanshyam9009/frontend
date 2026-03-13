@@ -1,0 +1,153 @@
+.card {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #edf2f8;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.cardHeader h3 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--text);
+}
+
+.cardHeader p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.statusBadge {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 6px 10px;
+  white-space: nowrap;
+}
+
+.statusBooked {
+  color: #065f46;
+  background: #d1fae5;
+}
+
+.statusRequested {
+  color: #92400e;
+  background: #ffedd5;
+}
+
+.statusCancelled {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.cardBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.section {
+  border: 1px solid #e6edf6;
+  border-radius: 10px;
+  padding: 12px;
+  background: #f9fcff;
+}
+
+.section h4 {
+  margin: 0 0 10px;
+  color: var(--primary);
+  font-size: 15px;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.metaGrid div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.metaGrid span {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #708198;
+  font-weight: 600;
+}
+
+.metaGrid strong {
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.reason {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: #8a5a00;
+  background: #fff8ea;
+  border: 1px solid #ffe8ba;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.actionRow {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ticketBtn,
+.cancelBtn {
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ticketBtn {
+  background: linear-gradient(120deg, #0e7490 0%, #0284c7 100%);
+}
+
+.ticketBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.cancelBtn {
+  background: linear-gradient(120deg, #0f766e 0%, #0ea5a4 100%);
+}
+
+.ticketBtn:hover,
+.cancelBtn:hover {
+  filter: brightness(0.95);
+}
+
+@media (max-width: 1024px) {
+  .cardBody {
+    grid-template-columns: 1fr;
+  }
+
+  .metaGrid {
+    grid-template-columns: 1fr;
+  }
+}

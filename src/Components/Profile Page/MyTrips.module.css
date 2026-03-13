@@ -1,0 +1,32 @@
+.MyTrips {
+  width: 100%;
+  padding: 16px;
+}
+
+.tripsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.tripsHeader h2 {
+  margin: 0;
+  color: #25252b;
+  font-size: 24px;
+}
+
+.tripsHeader span {
+  background: #fff0f1;
+  color: #d84e55;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tripsList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}

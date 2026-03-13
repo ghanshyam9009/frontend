@@ -1,0 +1,65 @@
+.mainBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+
+.mainBarTabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tabBtn {
+  border: none;
+  background: transparent;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.tabBtn:hover {
+  color: var(--brand);
+  background: #e7f6f2;
+}
+
+.tabBtnActive {
+  color: var(--brand);
+  background: #e7f6f2;
+}
+
+.viewSeatBtn {
+  border: none;
+  padding: 9px 16px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 800;
+  background: linear-gradient(120deg, #0f766e 0%, #0e7490 100%);
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+}
+
+.viewSeatBtn:hover {
+  filter: brightness(0.95);
+}
+
+.displayArea {
+  width: 100%;
+  min-height: 64px;
+  padding: 10px;
+  margin-top: 8px;
+  background: #f6fbf9;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 13px;
+  color: #455468;
+}

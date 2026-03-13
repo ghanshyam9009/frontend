@@ -1,0 +1,142 @@
+body {
+  color: var(--text);
+  word-break: break-word;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Payment__stripe {
+  margin-top: 24px;
+}
+
+.Payment__stripe button {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.Payment__stripe__button {
+  background: linear-gradient(120deg, #2563eb 0%, #0891b2 100%);
+  color: white;
+  height: 48px;
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.payment__fullContainer {
+  margin: 2% auto;
+  width: min(1380px, 96%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.icons {
+  font-size: 24px;
+}
+
+.payment__fullContainer_leftContainer {
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment__fullContainer_rightContainer {
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.payment__fullContainer_rightContainer_inputOfferCOde {
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 14px;
+  border: 1px solid var(--line);
+}
+
+.payment__fullContainer_rightContainer_infobar {
+  margin-top: 12px;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  height: 58px;
+  background-color: var(--surface);
+}
+
+.payment__fullContainer_rightContainer_trip_container,
+.payment__fullContainer_rightContainer_fair_container {
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 16px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.payment__fullContainer_rightContainer_fair_container {
+  margin: 12px 0;
+}
+
+.travel_operator_info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 1 0%;
+}
+
+.travel_title {
+  color: var(--brand);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.38;
+  padding-right: 3%;
+}
+
+.travel_specification {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.33;
+}
+
+.line {
+  height: 1em;
+  border-bottom: 0.5px solid var(--line);
+  margin-bottom: 1em;
+}
+
+.passangerInfo {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 16px;
+  background-color: #eef4ff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.passangerName {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.33;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.payment_banner_icon_img {
+  height: 22px;
+  margin-left: 20px;
+}
+
+@media (max-width: 1024px) {
+  .payment__fullContainer {
+    flex-direction: column;
+  }
+
+  .payment__fullContainer_leftContainer,
+  .payment__fullContainer_rightContainer {
+    width: 100%;
+  }
+}

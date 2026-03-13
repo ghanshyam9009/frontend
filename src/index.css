@@ -1,0 +1,37 @@
+:root {
+  --bg: #f6f8f4;
+  --bg-2: #eef6f3;
+  --surface: #ffffff;
+  --surface-soft: #f5fbf8;
+  --text: #1f2937;
+  --muted: #607080;
+  --line: #dbe7df;
+  --brand: #0f766e;
+  --brand-2: #0e7490;
+  --accent: #f59e0b;
+  --ok: #15803d;
+  --warn: #b45309;
+  --danger: #dc2626;
+  --radius: 16px;
+  --shadow: 0 14px 28px rgba(30, 52, 44, 0.08);
+}
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", "Segoe UI", Tahoma, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 0% 0%, #dff6ea 0%, transparent 28%),
+    radial-gradient(circle at 100% 0%, #fff3d7 0%, transparent 24%),
+    linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 36%);
+}
+
+.appShell {
+  min-height: 100vh;
+  overflow-x: hidden;
+}

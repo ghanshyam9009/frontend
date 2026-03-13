@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.securityContainer {
+  width: 100%;
+  min-height: 42px;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.securityIcon {
+  color: var(--brand);
+  font-size: 22px !important;
+}
+
+.securityContainer > div {
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.mainContainer {
+  width: 100%;
+  min-height: 52px;
+  margin-top: 10px;
+  padding: 8px 0 0;
+  color: #4a4a4a;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.mainContainer1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 8px;
+  white-space: nowrap;
+}
+
+.mainContainer1 > div:nth-child(1) {
+  font-size: 14px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.mainContainer1 > div:nth-child(2) {
+  color: #516174;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.sortPillsWrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.sortPill {
+  border: 1px solid #d8e8e2;
+  background: #f7fcfa;
+  color: #334155;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sortPill:hover {
+  border-color: #bad5cb;
+  background: #eef8f4;
+  color: #0f766e;
+}
+
+.sortPillActive {
+  border-color: #0f766e;
+  background: #e7f6f2;
+  color: #0f766e;
+}
+
+.sortPillDisabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1024px) {
+  .mainContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sortPillsWrap {
+    justify-content: flex-start;
+  }
+}
